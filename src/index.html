@@ -388,17 +388,17 @@
           </div>
         </div>
       </section>
-      <section class="gutter pb-20 pt-32">
+      <section class="gutter pb-20 px-4 md:px-0 pt-32">
         <h1 class="uppercase font-family-secondary text-primary/50">
           university news
         </h1>
         <h3
-          class="capitalize text-primary text-5xl font-bold font-family-primary mt-4 mb-8"
+          class="capitalize text-primary text-2xl md:text-5xl font-bold font-family-primary mt-4 mb-8"
         >
           Notre Dame At Work
         </h3>
         <div class="w-full flex justify-between items-center">
-          <div class="bg-secondary h-1.5 w-20 -ml-8"></div>
+          <div class="bg-secondary h-1.5 w-10 md:w-20 md:-ml-8"></div>
           <p class="flex gap-1 items-center">
             View all news
             <svg
@@ -420,7 +420,9 @@
         <div class="w-full flex mt-10">
           <div class="w-1/4 invisible">me</div>
           <div class="w-3/4">
-            <div class="w-full flex bg-[#edf2f9] py-12 px-16 relative">
+            <div
+              class="w-full hidden md:flex bg-[#edf2f9] py-12 px-16 relative"
+            >
               <div class="absolute top-16 -left-[33%]">
                 <img src="./images/globering_2025.jpg" class="w-[40rem]" />
               </div>
@@ -460,9 +462,9 @@
             </div>
           </div>
         </div>
-        <div class="w-full flex mt-40 gap-12">
+        <div class="w-full flex flex-col md:flex-row mt-0 md:mt-40 gap-12">
           <div
-            class="w-1/4 hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 py-4 px-2 cursor-pointer hover:border-b-4 hover:border-primary/50"
+            class="w-full md:w-1/4 hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 py-4 px-2 cursor-pointer hover:border-b-4 hover:border-primary/50"
           >
             <p
               class="uppercase font-family-secondary text-primary/50 text-[14px] mb-3"
@@ -474,9 +476,9 @@
             </p>
           </div>
           <div
-            class="w-3/4 flex gap-6 items-center hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 hover:border-b-4 hover:border-primary/50"
+            class="w-full md:w-3/4 flex flex-col md:flex-row gap-6 items-center hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 hover:border-b-4 hover:border-primary/50"
           >
-            <img src="./images/mc_mcob_banner.jpg" class="w-80" />
+            <img src="./images/mc_mcob_banner.jpg" class="w-full md:w-80" />
             <div class="flex flex-col">
               <p
                 class="uppercase font-family-secondary text-primary/50 text-[14px] mb-3"
@@ -492,7 +494,7 @@
           </div>
         </div>
         <div
-          class="w-1/4 mt-4 hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 py-4 px-2 cursor-pointer hover:border-b-4 hover:border-primary/50"
+          class="w-full md:w-1/4 mt-4 hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 py-4 px-2 cursor-pointer hover:border-b-4 hover:border-primary/50"
         >
           <p
             class="uppercase font-family-secondary text-primary/50 text-[14px] mb-3"
@@ -504,17 +506,17 @@
           </p>
         </div>
       </section>
-      <section class="gutter py-20 bg-white">
+      <section class="gutter py-20 px-4 md:px-0 bg-white">
         <h1 class="uppercase font-family-secondary text-primary/50">
           university stories
         </h1>
         <h3
-          class="capitalize text-primary text-5xl font-bold font-family-primary mt-4 mb-8"
+          class="capitalize text-primary text-2xl md:text-5xl font-bold font-family-primary mt-4 mb-8"
         >
           Notre Dame In Focus
         </h3>
         <div class="w-full flex justify-between items-center mb-12">
-          <div class="bg-secondary h-1.5 w-20 -ml-8"></div>
+          <div class="bg-secondary h-1.5 w-10 md:w-20 md:-ml-8"></div>
           <p class="flex gap-1 items-center">
             View all stories
             <svg
@@ -533,8 +535,8 @@
             </svg>
           </p>
         </div>
-        <div class="flex w-full justify-between gap-10">
-          <div class="flex flex-col w-1/3 hover-border">
+        <div class="flex flex-col md:flex-row w-full justify-between gap-10">
+          <div class="flex flex-col w-full md:w-1/3 hover-border">
             <img src="./images/2025-sampoorna-800.webp" alt="" />
             <div class="px-4 py-6">
               <h1 class="uppercase font-family-secondary text-primary/50">
@@ -547,7 +549,7 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-col w-1/3 hover-border">
+          <div class="flex flex-col w-full md:w-1/3 hover-border">
             <img src="./images/2025-habitat-800.jpg" alt="" />
             <div class="hover:bg-primary/30 px-4 py-6">
               <h1 class="uppercase font-family-secondary text-primary/50">
@@ -560,7 +562,7 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-col w-1/3 hover-border">
+          <div class="flex flex-col w-full md:w-1/3 hover-border">
             <img src="./images/2025-sampoorna-800.webp" alt="" />
             <div class="px-4 py-6">
               <h1 class="uppercase font-family-secondary text-primary/50">
@@ -575,12 +577,12 @@
           </div>
         </div>
       </section>
-      <section class="flex w-full bg-white pt-4">
+      <section class="flex flex-col-reverse md:flex-row w-full bg-white pt-4">
         <div
-          class="w-[55%] bg-primary text-white my-6 py-8 flex flex-col items-center justify-center"
+          class="w-full md:w-[55%] bg-primary text-white my-0 md:my-6 py-8 flex flex-col items-center justify-center"
         >
           <p
-            class="capitalize text-[30px] font-family-primary w-[90%] mx-auto leading-12 mb-4"
+            class="capitalize text-lg md:text-[30px] font-family-primary w-[90%] mx-auto leading-12 mb-4"
           >
             “Notre Dame must be the leading global Catholic research university,
             on par with but distinct from the world's best private universities.
@@ -594,24 +596,24 @@
             </p>
           </div>
         </div>
-        <div class="w-[45%]">
+        <div class="w-full md:w-[45%]">
           <img
             src="./images/dowd-students-400.webp"
-            class="object-cover w-full min-h-[540px]"
+            class="object-cover w-full md:min-h-[540px]"
           />
         </div>
       </section>
-      <section class="gutter py-20">
+      <section class="gutter py-20 px-4 md:px-0">
         <h1 class="uppercase font-family-secondary text-primary/50">
           university events
         </h1>
         <h3
-          class="capitalize text-primary text-5xl font-bold font-family-primary mt-4 mb-8"
+          class="capitalize text-primary text-2xl md:text-5xl font-bold font-family-primary mt-4 mb-8"
         >
           Notre Dame In Motion
         </h3>
         <div class="w-full flex justify-between items-center mb-12">
-          <div class="bg-secondary h-1.5 w-20 -ml-8"></div>
+          <div class="bg-secondary h-1.5 w-10 md:w-20 md:-ml-8"></div>
           <p class="flex gap-1 items-center">
             View all events
             <svg
@@ -630,7 +632,7 @@
             </svg>
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-20">
           <div class="flex items-start gap-6">
             <div
               class="text-2xl flex p-4 flex-col items-center justify-center font-bold uppercase"
@@ -639,7 +641,7 @@
               <h3 class="text-primary">28</h3>
             </div>
             <div class="p-4 hover-border">
-              <p class="text-primary text-2xl mb-3 capitalize">
+              <p class="text-primary text-base md:text-2xl mb-3 capitalize">
                 Ten years hence lecture: "A brief history of the future"
               </p>
               <p class="text-gray-600 flex gap-1">
@@ -669,7 +671,7 @@
               <h3 class="text-primary">28</h3>
             </div>
             <div class="p-4 hover-border">
-              <p class="text-primary text-2xl mb-3 capitalize">
+              <p class="text-primary text-base md:text-2xl mb-3 capitalize">
                 Ten years hence lecture: "A brief history of the future"
               </p>
               <p class="text-gray-600 flex gap-1">
@@ -699,7 +701,7 @@
               <h3 class="text-primary">28</h3>
             </div>
             <div class="p-4 hover-border">
-              <p class="text-primary text-2xl mb-3 capitalize">
+              <p class="text-primary text-base md:text-2xl mb-3 capitalize">
                 Ten years hence lecture: "A brief history of the future"
               </p>
               <p class="text-gray-600 flex gap-1">
@@ -729,7 +731,7 @@
               <h3 class="text-primary">28</h3>
             </div>
             <div class="p-4 hover-border">
-              <p class="text-primary text-2xl mb-3 capitalize">
+              <p class="text-primary text-base md:text-2xl mb-3 capitalize">
                 Ten years hence lecture: "A brief history of the future"
               </p>
               <p class="text-gray-600 flex gap-1">
