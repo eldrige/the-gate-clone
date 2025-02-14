@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>University of Notre dame clone</title>
     <link href="/src/styles.css" rel="stylesheet" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link
@@ -32,16 +32,16 @@
   <body>
     <header class="w-full">
       <nav>
-        <div class="w-full bg-secondary h-1"></div>
+        <div class="w-full bg-secondary h-2 md:h-1"></div>
         <div class="w-full relative bg-primary p-6 border-b-4 border-[#081629]">
           <div
-            class="w-full text-white mx-auto max-w-7xl flex justify-between items-start bg-primary"
+            class="w-full text-white mx-auto max-w-7xl flex md:justify-between md:items-start justify-center items-center bg-primary"
           >
-            <h1 class="font-primary text-white text-2xl uppercase">
+            <h1 class="font-primary text-white text-lg md:text-2xl uppercase">
               Universite of <br />
               <p class="">Notre Dame</p>
             </h1>
-            <div class="flex justify-between gap-6">
+            <div class="justify-between gap-6 hidden md:flex">
               <p class="font-bold">About</p>
               <p class="font-bold border-r border-gray-200 pr-4">Visit</p>
               <div class="flex gap-1 items-center">
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div
-            class="w-full z-50 absolute text-gray-500 -bottom-10 shadow-lg right-18 max-w-fit flex font-secondary tracking-wide py-4 px-6 flex-row gap-8 text-lg bg-white capitalize"
+            class="w-full z-50 absolute text-gray-500 -bottom-10 shadow-lg right-18 max-w-fit hidden md:flex font-secondary tracking-wide py-4 px-6 flex-row gap-8 text-lg bg-white capitalize"
           >
             <p class="cursor-pointer">Academics</p>
             <p class="cursor-pointer">Admissions</p>
@@ -131,20 +131,26 @@
         class="relative flex w-full justify-end h-screen bg-[url('./images/campus.webp')] bg-cover bg-center"
       >
         <div class="absolute inset-0 bg-primary/75"></div>
-        <div class="gutter z-50 flex justify-end">
-          <div class="w-1/2 flex flex-col gap-y-6 text-white text-2xl">
-            <div class="w-full flex justify-end mt-20 ml-8">
-              <img src="./images/fight.svg" class="size-80" />
+        <div class="gutter z-50 flex justify-center md:justify-end">
+          <div
+            class="w-full md:w-1/2 flex flex-col gap-y-6 text-white text-2xl"
+          >
+            <div
+              class="w-full flex justify-center items-center md:justify-end mt-20 md:ml-8"
+            >
+              <img src="./images/fight.svg" class="size-52 md:size-80" />
             </div>
-            <div class="w-full justify-end flex">
-              <p class="w-4/5 font-primary tracking-wider text-right">
+            <div class="w-full justify-center md:justify-end flex">
+              <p
+                class="w-full px-4 md:w-4/5 font-primary tracking-wider text-center text-sm md:text-base md:text-right"
+              >
                 Notre Dame attracts people willing to take action to find
                 solutions to humanity's most pressing challenges. "What would
                 you fight for?" For us, it's not a question. It's a call to
                 action. We are the Fighting Irish.
               </p>
             </div>
-            <div class="w-full flex justify-end">
+            <div class="w-full flex justify-center md:justify-end">
               <button
                 class="flex items-center gap-1 text-primary bg-white rounded-lg min-w-14 px-4 py-3 cursor-pointer text-base"
               >
@@ -167,19 +173,16 @@
             </div>
           </div>
         </div>
-        <!-- <img src="./images/campus.webp" class="w-full h-full object-cover" /> -->
-        <!-- <div class="flex text-4xl flex-col items-center justify-center">
-          <img src="./assets/images/fight.svg" alt="" />
-          <p>fight for</p>
-        </div> -->
       </section>
       <section class="bg-white mt-6 pb-28">
-        <div class="w-full flex gap-x-10">
+        <div class="w-full flex flex-col md:flex-row gap-x-10">
           <div
-            class="w-2/5 cursor-pointer hover:bg-primary/30 hover:border-b-4 hover:border-primary/50"
+            class="w-full md:w-2/5 cursor-pointer hover:bg-primary/30 hover:border-b-4 hover:border-primary/50"
           >
             <img src="./images/nafsa.webp" class="w-full h-[20rem] mb-6" />
-            <div class="w-full flex flex-col mx-auto px-32">
+            <div
+              class="w-full flex flex-col mx-auto px-8 md:px-32 py-4 md:py-0"
+            >
               <p class="text-primary/80 uppercase text-gray-300">University</p>
               <p
                 class="text-3xl text-primary tracking-wider font-family-primary"
@@ -189,9 +192,11 @@
               </p>
             </div>
           </div>
-          <div class="w-3/5 py-20 flex flex-col gap-y-20 pr-32">
+          <div
+            class="w-full md:w-3/5 py-4 md:py-20 flex flex-col gap-y-20 md:pr-32"
+          >
             <div
-              class="max-w-fit hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 py-8 px-6 cursor-pointer hover:border-b-4 hover:border-primary/50"
+              class="max-w-fit mx-auto w-4/5 hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 py-8 px-6 cursor-pointer hover:border-b-4 hover:border-primary/50"
             >
               <p class="uppercase font-family-secondary text-primary/50">
                 Colleges and schools
@@ -219,7 +224,7 @@
               </div>
             </div>
             <div
-              class="max-w-fit hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 py-8 px-6 cursor-pointer hover:border-b-4 hover:border-primary/50"
+              class="max-w-fit mx-auto w-4/5 hover:scale-105 transition-transform duration-700 ease-out group hover:bg-primary/20 py-8 px-6 cursor-pointer hover:border-b-4 hover:border-primary/50"
             >
               <p class="uppercase font-family-secondary text-primary/50">
                 Global
@@ -259,20 +264,22 @@
           src="./images/pattern-celtic_knot-rings.svg"
           class="absolute bottom-0 left-0"
         />
-        <div class="grid grid-cols-2 gap-y-20 gap-x-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-y-4 md:gap-y-20 gap-x-10"
+        >
           <div class="-mt-28">
             <img src="./images/pillar-research-400.jpg" class="w-[42rem]" />
           </div>
-          <div class="text-white pr-20">
+          <div class="text-white px-4 md:pl-0 md:pr-20">
             <h1 class="uppercase text-gray-400 text-base font-semibold">
               research
             </h1>
             <h3
-              class="capitalize text-white text-4xl font-bold tracking-wider font-family-secondary my-4"
+              class="capitalize text-white text-2xl md:text-4xl font-bold tracking-wider font-family-secondary my-4"
             >
               the opportunity of inquiry
             </h3>
-            <div class="bg-secondary h-1.5 w-20 -ml-4"></div>
+            <div class="bg-secondary h-1.5 w-10 md:w-20 md:-ml-4"></div>
             <p class="my-4 text-lg">
               For scholars who share a common passion for inquiry because of
               what it can reveal about our world and ourselves, there is
@@ -298,16 +305,16 @@
               </p>
             </div>
           </div>
-          <div class="text-white pl-20 mt-20">
+          <div class="text-white px-4 md:pl-20 mt-0 md:mt-20">
             <h1 class="uppercase text-gray-400 text-base font-semibold">
               faith & service
             </h1>
             <h3
-              class="capitalize text-white text-4xl font-bold tracking-wider font-family-secondary my-4"
+              class="capitalize text-white text-2xl md:text-4xl font-bold tracking-wider font-family-secondary my-4"
             >
               the demands of justice
             </h3>
-            <div class="bg-secondary h-1.5 w-20 -ml-4"></div>
+            <div class="bg-secondary h-1.5 w-10 md:w-20 md:-ml-4"></div>
             <p class="my-4 text-lg">
               For scholars who share a common passion for inquiry because of
               what it can reveal about our world and ourselves, there is
@@ -334,21 +341,26 @@
             </div>
           </div>
           <div class="">
-            <img src="./images/faith.jpg" class="w-[42rem]" />
+            <img src="./images/faith.jpg" class="w-[42rem] hidden md:block" />
           </div>
+
           <div class="-mb-32">
-            <img src="./images/pillar-global-400.jpg" class="w-[42rem]" />
+            <img
+              src="./images/pillar-global-400.jpg"
+              class="w-[42rem] hidden md:block"
+            />
           </div>
-          <div class="text-white pr-20">
+
+          <div class="text-white px-4 md:pr-20">
             <h1 class="uppercase text-gray-400 text-base font-semibold">
               global
             </h1>
             <h3
-              class="capitalize text-white text-4xl font-bold tracking-wider font-family-secondary my-4"
+              class="capitalize text-white text-2xl md:text-4xl font-bold tracking-wider font-family-secondary my-4"
             >
               the connected world
             </h3>
-            <div class="bg-secondary h-1.5 w-20 -ml-4"></div>
+            <div class="bg-secondary h-1.5 w-10 md:w-20 md:-ml-4"></div>
             <p class="my-4 text-lg">
               Notre Dame seeks to be in the world, and to bring the world to
               Notre Dame, because inquiry and scholarly exchange are enriched by
@@ -773,7 +785,7 @@
         </div>
       </section>
     </main>
-    <footer class="w-full">
+    <!-- <footer class="w-full">
       <div class="gutter">
         <div class="w-full grid grid-cols-3 justify-between gap-x-16 py-8">
           <h1 class="font-primary text-primary text-2xl uppercase">
@@ -848,6 +860,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
